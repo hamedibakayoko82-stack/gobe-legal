@@ -1,6 +1,6 @@
 # GoBe — Privacy Policy
 
-**Last updated:** 4 August 2026
+**Last updated:** 9 August 2026
 
 > This is the hosted version of GoBe's Privacy Policy. It is generated from and kept in sync with the in-app version.
 
@@ -64,14 +64,21 @@ Achievements. We record the milestones your account passes — for example your 
 
 ## 7. How We Use Your Information
 
-We use the information described above to: operate the App's core features (recording trails, placing traces, displaying your map); create and secure your account; authenticate you across devices and sessions; display your profile and content to you and, where applicable, to other users; moderate content and keep the service safe; maintain and improve the App's reliability and features; respond to support requests; and meet legal obligations. We also use it to send you notifications about activity that involves you — such as a like, comment, or retrace on your trace, or a friend request — and occasional GoBe progress or exploration prompts such as territory recaps, ranking movement, milestone prompts and return reminders. These are controlled together by the single Notifications switch in the App's profile screen and by iOS Settings. GoBe's progress and exploration prompts use your activity, GoBe Score and area standing. We do not sell your personal information, and we do not use your location or content data for third-party advertising.
+We use the information described above to: operate the App's core features (recording trails, placing traces, displaying your map); create and secure your account; authenticate you across devices and sessions; display your profile and content to you and, where applicable, to other users; moderate content and keep the service safe; maintain and improve the App's reliability and features; respond to support requests; and meet legal obligations. We also use it to send you notifications about activity that involves you — such as a like, comment, or retrace on your trace, or a friend request — and occasional GoBe progress or exploration prompts such as territory recaps, ranking movement, milestone prompts and return reminders. These are controlled together by the single Notifications switch in the App's profile screen and by iOS Settings. GoBe's progress and exploration prompts use your activity, GoBe Score and area standing.
+
+Email. We use the email address on your account for two different purposes, and only one of them is optional.
+
+- Service email, which we send because you have an account: confirming your address, resetting your password, security notices, a reply when you contact us, and notice of a material change to this policy or our Terms. These are not marketing and cannot be switched off while your account exists.
+- Marketing email, which we send only if you ask us to: occasional word about new features and what's happening near you, no more than once a month. This is off unless you turn on "Emails from GoBe" under Settings → Notifications in the App. Every marketing email carries a one-click unsubscribe link that works without signing in, and you can also switch it off in the App at any time. We record when you turned it on, which version of this policy was in force at the time, and every later change, so that we can show the consent we are relying on.
+
+We do not sell your personal information, we do not share your email address with advertisers or data brokers, and we do not use your location or content data for third-party advertising.
 
 ## 8. Our Legal Bases for Using Your Data
 
 Where the UK GDPR, EU GDPR, or a similar law requires a legal basis, we rely on:
 
 - Contract — to create and run your account and provide the core features you request.
-- Consent — for device access to precise and background location, motion/step data, and optional promotional notifications where consent is required. You can withdraw consent in the App or iOS Settings without affecting earlier lawful processing, although the related feature may stop working.
+- Consent — for device access to precise and background location, motion/step data, optional promotional notifications, and marketing email, where consent is required. Marketing email is sent only with your consent under regulation 22 of the Privacy and Electronic Communications Regulations 2003; we do not rely on the "soft opt-in" exception, because GoBe does not sell you anything. You can withdraw consent in the App, in iOS Settings, or through the unsubscribe link in any marketing email, without affecting earlier lawful processing, although the related feature may stop working.
 - Legitimate interests — to secure and improve GoBe, prevent abuse, calculate service statistics, and moderate content, after balancing those interests against your rights.
 - Legal obligation — to comply with privacy, safety, consumer, and other applicable laws and lawful requests.
 - Vital interests or public interest — only in the exceptional circumstances in which applicable law permits and the basis genuinely applies.
@@ -99,11 +106,13 @@ We do not share your personal information with advertisers or data brokers. We m
 
 We keep your account, profile, trail, and trace data for as long as your account is active, so the App can show you your history and keep your content in sync. If you delete your account (see below), we delete or anonymise this data within 30 days, except where we are required to keep limited records longer for legal, security, or fraud-prevention purposes — in which case we keep only what is necessary, for no longer than required.
 
+Marketing consent records. If you turn marketing email on or off, we keep a dated record of that change for as long as your account exists, so that we can evidence the consent we relied on when we sent you something. The record holds the change itself, its date and how it was made — it does not hold the content of any email. It is deleted with your account.
+
 ## 12. Your Rights & Choices
 
 Depending on where you live, you may have rights to know or access the information we hold about you; correct, delete, or receive a portable copy of it; object to or restrict processing; withdraw consent; opt out of certain disclosures, targeted advertising, or profiling; appeal a refused request; and complain to a privacy authority. We do not sell personal information or use it for third-party targeted advertising.
 
-You can review and edit profile information in the App, delete your account using "Delete Account," and revoke device permissions in iOS Settings. You may also email contact@gobeapp.co.uk. We may verify your identity before completing a request and will respond within the period required by the law that applies to you. We will not discriminate against you for exercising a privacy right.
+You can review and edit profile information in the App, delete your account using "Delete Account," revoke device permissions in iOS Settings, and stop marketing email either with the unsubscribe link in any such email or by switching off "Emails from GoBe" under Settings → Notifications. You may also email contact@gobeapp.co.uk. We may verify your identity before completing a request and will respond within the period required by the law that applies to you. We will not discriminate against you for exercising a privacy right.
 
 ## 13. Children & Users Under 18
 
