@@ -1,6 +1,6 @@
 # GoBe — Privacy Policy
 
-**Last updated:** 9 August 2026
+**Last updated:** 20 August 2026
 
 > This is the hosted version of GoBe's Privacy Policy. It is generated from and kept in sync with the in-app version.
 
@@ -25,7 +25,7 @@ Authentication and session management are handled by Supabase (specifically its 
 
 When you set up your profile, we collect the display name and username you choose, your date of birth (the App requires you to confirm you are at least 16 years old), and, optionally, an avatar photo you upload. This information is shown to you within the App and, depending on the feature, may be visible to other users — for example, your display name and avatar on a Trail or Trace.
 
-Being found. Other signed-in users can search for people by display name or username, so your profile can be reached by someone who has not crossed paths with you in the App. Search results show only your display name, username, avatar and profile line — never your location. Anyone you have blocked, and anyone who has blocked you, is excluded from your search results and you from theirs.
+Being found. Other signed-in users can search for people by display name or username, so your profile can be reached by someone who has not crossed paths with you in the App. The App may also suggest your profile to other signed-in users as somebody they could connect with, either because you left a Trace near them or simply because you have an account; a suggestion shows the same details a search does and never says where you are or have been. Search results and suggestions show only your display name, username, avatar and profile line — never your location. Anyone you have blocked, and anyone who has blocked you, is excluded from your search results and you from theirs.
 
 ## 4. Location Information
 
@@ -59,6 +59,10 @@ Choosing photos. When you set a profile picture, Apple's system photo picker let
 Reports and blocks. If you report a Trace, we keep a record of the report: your account, the reported content and its author, the reason you chose, and when you filed it. We use this to review the report and to meet our content moderation duties under the Online Safety Act 2023. Reports are visible only to us, never to other users. If you block someone, we store your block list (your account and the accounts you have blocked) so that their content stays hidden from you. Your block list is private to you, and the people you block are not told about it.
 
 Friends, invites and your GoBe Score. When you add another user as a friend (a mutual "bond"), we store the connection between your two accounts so we can show it to you both and deliver friend requests. If you invite someone with your personal invite code, or join using a friend's code, we store the link between the inviting account and the joining account so we can attribute the referral. We also calculate a "GoBe Score" — a single number derived from your own activity (traces, trails, retraces, likes, comments, the people you are connected with, and successful invites) and the reactions your traces receive. Your GoBe Score is shown on your profile and is visible to other signed-in users; it does not reveal your location or the content of any private Trail.
+
+Communities and events. You can start a "community" (a standing group) or an "event" (a dated one) and pin it to a place on the map. We store its name, the short description and character you choose for it, the coordinate and radius you place it at, when an event starts and finishes, whether anyone may join or you approve each person, and who has joined or asked to join. A community or event you start is visible on the map to any signed-in user, so please do not give one a name or description you would not want strangers to read, and do not pin one to your home. Who has joined is shown to the people who have joined it, and to whoever started it; a request to join is visible only to you and to whoever started it.
+
+What joining changes. When you leave a Trace you may choose to leave it to one community or event you belong to. Doing so lets everyone who has joined that community or event open that Trace from anywhere, instead of having to be near it. It changes nothing else: your other Traces keep their normal visibility, your Trails stay private, and nobody gains access to your location or your account. The choice is made on each Trace as you leave it and is never applied to a Trace retrospectively, so joining a group can never open Traces you left before you joined. If you leave a community or event, its Traces close to you again. An event only accepts a Trace left inside its area while it is on. Whoever started a community or event can call it off; the Traces left to it remain yours and stay on the map, but stop being shared through it.
 
 Achievements. We record the milestones your account passes — for example your first Trace, ten Trails, or a number of steps walked — along with the date each was reached. They are worked out from activity we already hold (your traces, trails, steps, friends, the likes and retraces your traces receive, and your GoBe Score) and are shown on your profile to other signed-in users. An achievement shows what you have done, never where: it does not name a place or reveal the content of any Trace or Trail.
 

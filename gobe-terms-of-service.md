@@ -1,6 +1,6 @@
 # GoBe — Terms of Service
 
-**Last updated:** 4 August 2026
+**Last updated:** 20 August 2026
 
 > This is the hosted version of GoBe's Terms of Service. It is generated from and kept in sync with the in-app version.
 
@@ -14,7 +14,7 @@ You must be at least 16 years old to create a GoBe account or use the App. Durin
 
 ## 3. Description of the Service
 
-GoBe lets you record "Trails" — routes you travel, tracked via your device's location services — and create "Traces" — notes, optional photos or short videos, text you add on top of them, and pinned locations along your route — and view them on a map. You use GoBe signed in — with an Apple ID, or with an email-verified username and password. GoBe is a user-to-user service: content you share may be visible to other users where the App's features allow.
+GoBe lets you record "Trails" — routes you travel, tracked via your device's location services — and create "Traces" — notes, optional photos or short videos, text you add on top of them, and pinned locations along your route — and view them on a map. You use GoBe signed in — with an Apple ID, or with an email-verified username and password. GoBe is a user-to-user service: content you share may be visible to other users where the App's features allow. You can also start a "community" or an "event" and pin it to the map for others to join, and choose to leave a Trace to one you belong to, which lets everyone who has joined it open that Trace without having to be near it.
 
 ## 4. Your Account
 
@@ -32,6 +32,12 @@ When using GoBe, you agree not to:
 - Use the App for any unlawful purpose.
 
 We may remove content or suspend or terminate accounts that we believe, in good faith, violate this section.
+
+## 5a. Communities & Events
+
+If you start a community or event, you are responsible for what you name it, what you write in it, and where you pin it. Do not pin one to somebody's home or to a place you do not have the right to gather at, do not use one to organise anything unlawful or to target a person or group, and do not name one so as to impersonate a real organisation, venue or person. A community or event is not an invitation to trespass, and GoBe is not the organiser of anything you start: any real-world gathering is yours, and the safety, permissions and legality of it are yours too.
+
+Whoever starts a community or event may decide who joins it and may remove anyone from it, and may call the whole thing off at any time. Traces left to it stay with their authors and stay on the map; they simply stop being shared through it. We may remove a community or event, or the whole account behind it, where it breaks these Terms — including where it is used to harass somebody, to reveal where somebody lives, or to gather people around a place in order to cause harm. Anything you leave to a community or event remains subject to the rest of these Terms, and can be reported in the same way as any other Trace.
 
 ## 6. Content Moderation, Reporting & Illegal Content
 
