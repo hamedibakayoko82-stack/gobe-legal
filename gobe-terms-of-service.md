@@ -1,6 +1,6 @@
 # GoBe — Terms of Service
 
-**Last updated:** 20 August 2026
+**Last updated:** 22 August 2026
 
 > This is the hosted version of GoBe's Terms of Service. It is generated from and kept in sync with the in-app version.
 
@@ -39,17 +39,19 @@ If you start a community or event, you are responsible for what you name it, wha
 
 Whoever starts a community or event may decide who joins it and may remove anyone from it, and may call the whole thing off at any time. Traces left to it stay with their authors and stay on the map; they simply stop being shared through it. We may remove a community or event, or the whole account behind it, where it breaks these Terms — including where it is used to harass somebody, to reveal where somebody lives, or to gather people around a place in order to cause harm. Anything you leave to a community or event remains subject to the rest of these Terms, and can be reported in the same way as any other Trace.
 
+Notes about places. You can leave one short note about a place, with an optional score. A note is about the place, not about the people in it: do not use one to identify, describe, or make claims about a member of staff or another customer, and do not use one to advertise. Notes are visible to other signed-in users alongside your username, are subject to the rest of these Terms, and can be reported and removed in the same way as a Trace.
+
 ## 6. Content Moderation, Reporting & Illegal Content
 
 We operate systems and processes to help keep GoBe safe and to detect and remove illegal content and content that breaches these Terms, including under the UK Online Safety Act 2023 and other platform-safety laws that apply where we offer the App.
 
-You can report any Trace, Trail, profile, or user that you believe is illegal, harmful, or in breach of these Terms — use the in-app reporting tools, or email us at contact@gobeapp.co.uk. Tell us what the content is, where you found it, and why you are reporting it. We aim to review reports of serious harm without undue delay, and we will remove content we find to be illegal or in breach of these Terms.
+You can report any Trace, Trail, note about a place, community or event, profile, or user that you believe is illegal, harmful, or in breach of these Terms — use the in-app reporting tools, or email us at contact@gobeapp.co.uk. Tell us what the content is, where you found it, and why you are reporting it. We aim to review reports of serious harm without undue delay, and we will remove content we find to be illegal or in breach of these Terms.
 
 If we remove content, restrict features, or suspend or close an account, we will explain the main reason where the law requires and provide any review or appeal route required in your country. If you believe content on GoBe infringes your intellectual property or privacy rights, contact us at the same address with enough detail to identify the content and your rights, and we will deal with it under our notice-and-takedown process.
 
 ## 7. Your Content & Licence to GoBe
 
-You retain ownership of the Traces, Trails, photos, and other content you create in GoBe ("Your Content"). By submitting Your Content, you grant Hamed Bakayoko a non-exclusive, worldwide, royalty-free licence to host, store, reproduce, and display Your Content as necessary to operate and provide the App's features (for example, rendering your Trail on a map, or showing a Trace you've shared to other users where the feature allows it). This licence ends when you delete the content or your account, except for content other users have already saved or where we must retain it to comply with the law.
+You retain ownership of the Traces, Trails, photos, notes about places, and other content you create in GoBe ("Your Content"). By submitting Your Content, you grant Hamed Bakayoko a non-exclusive, worldwide, royalty-free licence to host, store, reproduce, and display Your Content as necessary to operate and provide the App's features (for example, rendering your Trail on a map, or showing a Trace you've shared to other users where the feature allows it). This licence ends when you delete the content or your account, except for content other users have already saved or where we must retain it to comply with the law.
 
 You are solely responsible for Your Content and for ensuring you have the rights to share it. As described in our Privacy Policy, photos you upload are stored privately and can only be accessed by signed-in users through an access-controlled endpoint.
 

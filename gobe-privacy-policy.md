@@ -1,6 +1,6 @@
 # GoBe — Privacy Policy
 
-**Last updated:** 20 August 2026
+**Last updated:** 22 August 2026
 
 > This is the hosted version of GoBe's Privacy Policy. It is generated from and kept in sync with the in-app version.
 
@@ -56,9 +56,11 @@ This content is stored on our servers (described below) so it can sync across yo
 
 Choosing photos. When you set a profile picture, Apple's system photo picker lets you browse your Photos albums without giving GoBe general access to your library. GoBe receives only the individual image you choose, and only that image is uploaded. If another photo feature asks for library permission, iOS lets you limit access to selected photos.
 
-Reports and blocks. If you report a Trace, we keep a record of the report: your account, the reported content and its author, the reason you chose, and when you filed it. We use this to review the report and to meet our content moderation duties under the Online Safety Act 2023. Reports are visible only to us, never to other users. If you block someone, we store your block list (your account and the accounts you have blocked) so that their content stays hidden from you. Your block list is private to you, and the people you block are not told about it.
+Reports and blocks. If you report a Trace, a note about a place, or a community or event, we keep a record of the report: your account, a copy of the reported content and its author, the reason you chose, and when you filed it. We keep the copy so the report stays reviewable even if the content is deleted afterwards. We use this to review the report and to meet our content moderation duties under the Online Safety Act 2023. Reports are visible only to us, never to other users. If you block someone, we store your block list (your account and the accounts you have blocked) so that their content stays hidden from you. Your block list is private to you, and the people you block are not told about it.
 
 Friends, invites and your GoBe Score. When you add another user as a friend (a mutual "bond"), we store the connection between your two accounts so we can show it to you both and deliver friend requests. If you invite someone with your personal invite code, or join using a friend's code, we store the link between the inviting account and the joining account so we can attribute the referral. We also calculate a "GoBe Score" — a single number derived from your own activity (traces, trails, retraces, likes, comments, the people you are connected with, and successful invites) and the reactions your traces receive. Your GoBe Score is shown on your profile and is visible to other signed-in users; it does not reveal your location or the content of any private Trail.
+
+Notes about places. You can leave one short note about a place on the map, with an optional score out of five. We store what you wrote, the score if you gave one, the name the place had when you wrote it, and the coordinate of the place itself (not of you). A note is shown to other signed-in users on that place's board alongside your username and profile picture, so please do not write anything there you would not want strangers to read. Writing a second note about the same place replaces the first. You can change or delete your note at any time, and notes are deleted with your account. Notes from people you have blocked, and from people who have blocked you, are not shown to you.
 
 Communities and events. You can start a "community" (a standing group) or an "event" (a dated one) and pin it to a place on the map. We store its name, the short description and character you choose for it, the coordinate and radius you place it at, when an event starts and finishes, whether anyone may join or you approve each person, and who has joined or asked to join. A community or event you start is visible on the map to any signed-in user, so please do not give one a name or description you would not want strangers to read, and do not pin one to your home. Who has joined is shown to the people who have joined it, and to whoever started it; a request to join is visible only to you and to whoever started it.
 
