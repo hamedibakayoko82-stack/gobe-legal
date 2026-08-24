@@ -356,6 +356,8 @@ wk.mkdir(exist_ok=True)
                         "components": [
                             {"/": "/u/", "comment": "profile links"},
                             {"/": "/u/*", "comment": "profile links (path form)"},
+                            {"/": "/g/", "comment": "gathering links"},
+                            {"/": "/g/*", "comment": "gathering links (path form)"},
                         ],
                     }
                 ]
@@ -616,6 +618,109 @@ you over to the app rather than showing you their traces.</p>
 )
 print("wrote u/index.html")
 
+# --- /g/ : a shared community or event -------------------------------------
+#
+# The same two jobs as /u/, and the same refusal to show anything: installed,
+# reach the app over gobe://; not installed, land on the App Store. A gathering
+# has a name, a blurb and a place, and none of them is rendered here — a link is
+# forwardable and a web page is public, so publishing what a gathering is would
+# quietly hand strangers the thing the app only shows to people who joined.
+#
+# The id is a UUID rather than a name, because two running clubs in two cities
+# can both be called "Tuesday runners" and a link that opens the wrong one is
+# worse than a link that is ugly. It is validated as a UUID before it is handed
+# anywhere, so nothing from the URL can steer the scheme link.
+GATHERING_JS = f"""(function(){{
+  var STORE = {json.dumps(APP_STORE_URL)};
+  var q = new URLSearchParams(location.search);
+  // Accept both shapes: /g/?id=<uuid> (what we share) and /g/<uuid>.
+  var raw = q.get('id');
+  if (!raw) {{
+    try {{ raw = decodeURIComponent(location.pathname.replace(/^\\/g\\/?/, '')); }}
+    catch (e) {{ raw = ''; }}
+  }}
+  var id = (raw || '').trim().replace(/\\/+$/, '').toLowerCase();
+  var ok = /^[0-9a-f]{{8}}-[0-9a-f]{{4}}-[0-9a-f]{{4}}-[0-9a-f]{{4}}-[0-9a-f]{{12}}$/.test(id);
+  var appURL = ok ? '{APP_SCHEME}://g/?id=' + encodeURIComponent(id) : null;
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+            (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+  function reach(event) {{
+    if (!appURL) return;
+    if (event) event.preventDefault();
+    var timer = setTimeout(function () {{
+      if (document.visibilityState !== 'hidden') location.replace(STORE);
+    }}, 1400);
+    function cancel() {{ clearTimeout(timer); }}
+    document.addEventListener('visibilitychange', function () {{
+      if (document.hidden) cancel();
+    }});
+    window.addEventListener('pagehide', cancel);
+    location.href = appURL;
+  }}
+
+  function start() {{
+    var openBtn = document.getElementById('open-in-app');
+    if (openBtn) {{
+      if (appURL) openBtn.href = appURL;
+      openBtn.addEventListener('click', reach);
+    }}
+    if (iOS && appURL && !q.has('noauto')) reach();
+  }}
+
+  if (document.readyState === 'loading') {{
+    document.addEventListener('DOMContentLoaded', start);
+  }} else {{
+    start();
+  }}
+}})();"""
+
+GATHERING_CSP = (
+    "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; "
+    "script-src 'sha256-{hash}'; base-uri 'none'; form-action 'none'"
+).format(hash=base64.b64encode(hashlib.sha256(GATHERING_JS.encode("utf-8")).digest()).decode())
+
+gathering = f"""<section class="handoff">
+<div class="handoff-mark"><img src="/assets/icon.png" alt="" width="96" height="96"></div>
+<p class="eyebrow">Someone shared a gathering</p>
+<h1>Open this in GoBe.</h1>
+<p class="lede">Community and event links open straight in the app. If GoBe isn't
+on this iPhone yet, you'll be taken to the App Store to get it.</p>
+<div class="hero-cta">
+<a class="btn" id="open-in-app" href="{APP_STORE_URL}">Open in GoBe</a>
+<a class="btn" href="{APP_STORE_URL}">Get GoBe</a>
+</div>
+<p class="note">Free on the App Store · Made in the UK · For ages 16+</p>
+<p class="note"><a href="/index.html">What is GoBe?</a> · <a href="/support.html">Need a hand?</a></p>
+</section>
+
+<div class="card">
+<h2>What is this?</h2>
+<p>A <strong>community</strong> is a standing group pinned to a place on the map.
+An <strong>event</strong> is the same thing with a date on it. People join them,
+and a trace left to one can be opened by everyone who joined, from anywhere.</p>
+<h2>Why can't I see it here?</h2>
+<p>Gatherings aren't public web pages. What has been left to one is visible inside
+the app, to the people who joined it, not to anyone holding a link. So this page
+hands you over to the app rather than showing you what's there.</p>
+<p class="flush">More on how we handle your data in our
+<a href="/privacy.html">Privacy Policy</a>.</p>
+</div>
+"""
+(HERE / "g").mkdir(exist_ok=True)
+(HERE / "g" / "index.html").write_text(
+    page(
+        "Gathering",
+        gathering,
+        base="/",
+        description="Open this GoBe community or event in the app. GoBe — leave and find traces of daily moments.",
+        csp=GATHERING_CSP,
+        head=f"<script>{GATHERING_JS}</script>\n",
+    ),
+    encoding="utf-8",
+)
+print("wrote g/index.html")
+
 # --- 404 ---
 # The site is a set of real files, so the pretty profile form (/u/ada) has no
 # file behind it and 404s. That form predates the ?h= query and is still out
@@ -624,11 +729,19 @@ print("wrote u/index.html")
 # the canonical /u/?h= handoff, which then does the app-then-App-Store dance.
 # Everything else gets an ordinary, on-brand "not found".
 NOT_FOUND_JS = """(function(){
-  var m = location.pathname.match(/^\\/u\\/([^\\/?#]+)\\/?$/);
-  if (!m) return;
-  var handle = decodeURIComponent(m[1]).trim().replace(/^@/, '');
-  if (!/^[A-Za-z0-9._-]{1,40}$/.test(handle)) return;
-  location.replace('/u/?h=' + encodeURIComponent(handle));
+  var u = location.pathname.match(/^\\/u\\/([^\\/?#]+)\\/?$/);
+  if (u) {
+    var handle = decodeURIComponent(u[1]).trim().replace(/^@/, '');
+    if (!/^[A-Za-z0-9._-]{1,40}$/.test(handle)) return;
+    location.replace('/u/?h=' + encodeURIComponent(handle));
+    return;
+  }
+  var g = location.pathname.match(/^\\/g\\/([^\\/?#]+)\\/?$/);
+  if (g) {
+    var id = decodeURIComponent(g[1]).trim().toLowerCase();
+    if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(id)) return;
+    location.replace('/g/?id=' + encodeURIComponent(id));
+  }
 })();"""
 
 NOT_FOUND_CSP = (

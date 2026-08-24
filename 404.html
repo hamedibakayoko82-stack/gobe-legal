@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'sha256-0E/vH9dt/oMZgva0hYM+VyoOuzI2keXvjuTqBijxHZk='; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'; script-src 'sha256-693BBq8VLwHWobQg7O7X08KIq0KJipXMs82z2IWFGtA='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Not found · GoBe</title>
 <meta name="description" content="That page isn&#x27;t here. GoBe — leave and find traces of daily moments.">
@@ -17,11 +17,19 @@
 <link rel="apple-touch-icon" href="/assets/icon.png">
 <link rel="stylesheet" href="/assets/style.css">
 <script>(function(){
-  var m = location.pathname.match(/^\/u\/([^\/?#]+)\/?$/);
-  if (!m) return;
-  var handle = decodeURIComponent(m[1]).trim().replace(/^@/, '');
-  if (!/^[A-Za-z0-9._-]{1,40}$/.test(handle)) return;
-  location.replace('/u/?h=' + encodeURIComponent(handle));
+  var u = location.pathname.match(/^\/u\/([^\/?#]+)\/?$/);
+  if (u) {
+    var handle = decodeURIComponent(u[1]).trim().replace(/^@/, '');
+    if (!/^[A-Za-z0-9._-]{1,40}$/.test(handle)) return;
+    location.replace('/u/?h=' + encodeURIComponent(handle));
+    return;
+  }
+  var g = location.pathname.match(/^\/g\/([^\/?#]+)\/?$/);
+  if (g) {
+    var id = decodeURIComponent(g[1]).trim().toLowerCase();
+    if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/.test(id)) return;
+    location.replace('/g/?id=' + encodeURIComponent(id));
+  }
 })();</script>
 </head>
 <body>
